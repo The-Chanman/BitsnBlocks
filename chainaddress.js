@@ -8,10 +8,10 @@ var chain = new Chain({
 });
 
 
-chain.getAddress('1LJZ3rBwjQ9bj1n4Gw7pRFSZ1wjB4AvQZQ', function(err, resp) {
+chain.getAddress('12ZsGzmccFRpd3XjWXua4mvyafLZNCAieS', function(err, resp) {
 //	debugger;
 	var BTCaddress = {"address": resp[0].address, 
-		"total": { "balance": (resp[0].total.balance / 10000000), 
+		"total": { "balance": (resp[0].total.balance), // / 10000000), 
 			"received": resp[0].total.received / 100000000, 
 			"sent": resp[0].total.sent / 100000000}, 
 		"confirmed": {
